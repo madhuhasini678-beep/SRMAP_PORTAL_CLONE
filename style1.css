@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("image.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+}
+
+
+/* Logo */
+
+.logo-container {
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.logo-container img {
+    height: 120px;
+    width: 220px;
+    background-color: transparent;
+}
+
+
+/* Main Container */
+
+.container {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+/* Left Information Section */
+
+.content {
+    background-color: white;
+    margin-top: 25px;
+    margin-left: 30px;
+    display: inline-block;
+    padding: 17px 30px 12px 15px;
+    border-radius: 5px;
+    position: relative;
+    width: 55%;
+}
+
+.welcome {
+    color: #31708f;
+    font-size: 21px;
+}
+
+.heading {
+    color: #0000ff;
+}
+
+.senior-heading {
+    padding-bottom: 5px;
+}
+
+.description {
+    color: #333333;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    color: #333333;
+}
+
+.content ul li {
+    padding-bottom: 5px;
+}
+
+.login,
+.register {
+    padding-left: 40px;
+    font-size: 14px;
+}
+
+.tech {
+    font-size: 14px;
+    color: #333333;
+    padding-top: 6px;
+}
+
+.email {
+    color: #0000ff;
+    font-size: 14px;
+}
+
+.terms {
+    font-size: 14px;
+    color: #0000ff;
+    position: absolute;
+    right: 13px;
+    bottom: 13px;
+}
+
+
+/* Login Portal */
+
+.portal {
+    background-color: white;
+    margin-left: 30px;
+    margin-top: 25px;
+    border-radius: 5px;
+    width: 530px;
+}
+
+.text {
+    background-color: #484622;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 15px 0 13px 15px;
+    margin-bottom: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.portal ul {
+    padding: 0 20px;
+}
+
+.portal ul li {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    color: #333333;
+    font-size: 14px;
+    list-style-type: none;
+}
+
+.input-label {
+    padding-top: 8px;
+}
+
+input {
+    padding: 8px;
+    width: 85%;
+    color: #555;
+    border: 1px #ccc solid;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+}
+
+button {
+    width: 94.5%;
+    padding: 12px;
+    color: white;
+    background-color: rgb(37, 180, 37);
+    font-size: 15px;
+    border-style: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.captcha {
+    font-size: 24px;
+    color: #56532d !important;
+    padding-left: 25px !important;
+}
+
+
+/* Forgot Password */
+
+.forgot {
+    font-size: 14px;
+    color: #0000ff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: right;
+    padding-right: 25px;
+}
+
+.if {
+    color: #000099;
+    font-size: 14px;
+    padding: 0 5px 10px;
+    text-align: center;
+}
+
+
+/* Footer */
+
+.foot {
+    background-color: black;
+    color: white;
+    position: fixed;
+    font-size: 12px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+
+/* ============================= */
+/* Responsive Design */
+/* ============================= */
+
+@media (max-width: 1000px) {
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .portal {
+        width: 90%;
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .logo-container {
+        padding-top: 25px;
+        padding-left: 15px;
+        text-align: center;
+    }
+
+    .logo-container img {
+        width: 180px;
+        height: auto;
+    }
+
+    .content {
+        width: 92%;
+        margin-top: 15px;
+        padding: 15px;
+        padding-bottom: 35px;
+    }
+
+    .welcome {
+        font-size: 18px;
+    }
+
+    .login,
+    .register {
+        padding-left: 25px;
+    }
+
+    .portal {
+        width: 92%;
+        margin-top: 15px;
+        margin-bottom: 60px;
+    }
+
+    input {
+        width: 95%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .terms {
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .foot {
+        position: fixed;
+        font-size: 11px;
+    }
+}
